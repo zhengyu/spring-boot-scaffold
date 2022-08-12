@@ -1,0 +1,27 @@
+server:
+  port: ${service-service-demo}
+  servlet:
+    context-path: /demo
+
+
+spring:
+  devtools:
+    restart:
+      enabled: true
+      additional-paths: src/main/java #重启目录
+      exclude: WEB-INF/**
+    freemarker:
+      cache: false    #页面不加载缓存，修改即时生效
+
+
+  profiles:
+    active: ports
+
+  main:
+    allow-bean-definition-overriding: true
+
+  mvc:
+    servlet:
+      load-on-startup: 1
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER

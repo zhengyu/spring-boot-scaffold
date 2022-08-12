@@ -1,0 +1,3 @@
+service-service-demo: 9001
+
+log-dir: ./
