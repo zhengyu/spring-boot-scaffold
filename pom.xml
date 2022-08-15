@@ -29,6 +29,9 @@
         <lombok.version>1.18.22</lombok.version>
         <fastjson2.version>2.0.7</fastjson2.version>
         <jedis.version>3.9.0</jedis.version>
+        <swagger.version>2.10.5</swagger.version>
+        <swagger-models.version>1.6.6</swagger-models.version>
+        <knife4j.version>3.0.3</knife4j.version>
 
         <!-- 项目内模块 -->
         <scaffold-config.version>1.0-SNAPSHOT</scaffold-config.version>
@@ -62,6 +65,13 @@
                 <artifactId>scaffold-common</artifactId>
                 <groupId>org.zhengyu</groupId>
                 <version>${scaffold-common.version}</version>
+            </dependency>
+
+            <!-- 魔改swagger -->
+            <dependency>
+                <groupId>com.github.xiaoymin</groupId>
+                <artifactId>knife4j-spring-boot-starter</artifactId>
+                <version>${knife4j.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

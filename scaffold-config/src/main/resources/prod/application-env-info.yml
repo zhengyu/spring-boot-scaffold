@@ -1,0 +1,10 @@
+# 代表当前是 正式 环境-prod
+spring-boot-env-info: prod
+
+# 正式环境关闭文档
+swagger:
+  enable: false
+
+logback:
+  appname: ${spring.application.name}
+  logdir: /opt/backlogs/service

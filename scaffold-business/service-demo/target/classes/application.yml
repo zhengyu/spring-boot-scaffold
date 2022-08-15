@@ -15,7 +15,7 @@ spring:
 
 
   profiles:
-    active: ports
+    active: ports, env-info
 
   main:
     allow-bean-definition-overriding: true
